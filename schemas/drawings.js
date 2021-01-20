@@ -9,8 +9,8 @@ export default {
 			type: 'string',
 		},
 		{
-			name: 'drawing',
-			title: 'Drawing',
+			name: 'image',
+			title: 'Image',
 			type: 'image',
 			options: {
 				hotspot: true,
@@ -22,25 +22,22 @@ export default {
 			type: 'text',
 		},
 		{
-			name: 'slug',
-			title: 'URL (slug)',
-			type: 'slug',
-			options: {
-				source: 'title',
-				maxLength: 70,
-			},
-		},
-		{
-			name: 'publishedAt',
-			title: 'Published at',
-			type: 'datetime',
+			name: 'galleries',
+			title: 'Galleries',
+			type: 'array',
+			of: [
+				{
+					type: 'reference',
+					to: [{ type: 'galleries' }],
+				},
+			],
 		},
 	],
 
 	preview: {
 		select: {
 			title: 'title',
-			media: 'drawing',
+			media: 'image',
 		},
 	},
 }
