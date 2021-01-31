@@ -17,7 +17,7 @@ export default {
 			},
 		},
 		{
-			name: 'alt',
+			name: 'shortDescription',
 			title: 'Short Description',
 			type: 'text',
 		},
