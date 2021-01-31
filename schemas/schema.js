@@ -18,6 +18,5 @@ export default createSchema({
 		drawings,
 		// When added to this list, object types can be used as
 		// { type: 'typename' } in other document schemas
-		// blockContent,
 	]),
 })
