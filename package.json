@@ -1,11 +1,11 @@
 {
-	"name": "manelhajisanity",
+	"name": "mh-be-sanity",
 	"private": true,
-	"version": "1.0.0",
-	"description": "",
+	"version": "0.1.0",
+	"description": "manelhaji.com Sanity backend",
 	"main": "package.json",
-	"author": "Thomas Tanner <thotan@ik.me>",
-	"license": "UNLICENSED",
+	"author": "@repetitioestmaterstudiorum",
+	"license": "GPL-3.0",
 	"scripts": {
 		"start": "sanity start",
 		"build": "sanity build"
