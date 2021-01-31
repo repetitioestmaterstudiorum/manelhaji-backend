@@ -1,6 +1,6 @@
 export default {
-	name: 'drawing',
-	title: 'Drawing',
+	name: 'drawings',
+	title: 'Drawings',
 	type: 'document',
 	fields: [
 		{
@@ -17,26 +17,25 @@ export default {
 			},
 		},
 		{
-			name: 'description',
-			title: 'Description',
+			name: 'alt',
+			title: 'Short Description',
 			type: 'text',
 		},
 		{
-			name: 'galleries',
-			title: 'Galleries',
+			name: 'tags',
+			title: 'Tags',
 			type: 'array',
-			of: [
-				{
-					type: 'reference',
-					to: [{ type: 'galleries' }],
-				},
-			],
+			of: [{ type: 'string' }],
+			options: {
+				layout: 'tags',
+			},
 		},
 	],
 	preview: {
 		select: {
-			title: 'title',
 			media: 'image',
+			title: 'title',
+			subtitle: 'alt',
 		},
 	},
 }
