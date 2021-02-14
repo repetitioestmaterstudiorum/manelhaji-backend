@@ -6,8 +6,8 @@ export default () =>
 	S.list()
 		.title('Content')
 		.items([
+			...S.documentTypeListItems().filter(hiddenDocTypes),
 			S.listItem()
 				.title('About Page Content')
 				.child(S.editor().id('about').schemaType('about').documentId('singleton-about')),
-			...S.documentTypeListItems().filter(hiddenDocTypes),
 		])
