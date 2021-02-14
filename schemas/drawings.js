@@ -4,26 +4,28 @@ export default {
 	type: 'document',
 	fields: [
 		{
-			name: 'title',
 			title: 'Title',
+			name: 'title',
 			type: 'string',
+			validation: Rule => Rule.required(),
 		},
 		{
-			name: 'image',
 			title: 'Image',
+			name: 'image',
 			type: 'image',
 			options: {
 				hotspot: true,
 			},
+			validation: Rule => Rule.required(),
 		},
 		{
-			name: 'shortDescription',
 			title: 'Short Description',
+			name: 'shortDescription',
 			type: 'text',
 		},
 		{
-			name: 'tags',
 			title: 'Tags',
+			name: 'tags',
 			type: 'array',
 			of: [{ type: 'string' }],
 			options: {
