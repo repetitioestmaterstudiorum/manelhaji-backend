@@ -35,7 +35,7 @@ export default {
 		select: {
 			media: 'image',
 			title: 'title',
-			subtitle: 'alt',
+			subtitle: 'shortDescription',
 		},
 	},
 }
